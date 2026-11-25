@@ -1,0 +1,57 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Hyundai Bluelink (Spain / EU)",
+        "description": "Connect your Hyundai Bluelink account and configure your allowed charging schedule.",
+        "data": {
+          "username": "Bluelink Email",
+          "password": "Password",
+          "pin": "Bluelink PIN (for remote start/stop)",
+          "region": "Bluelink Region",
+          "weekday_start": "Weekday Start Time (HH:MM)",
+          "weekday_end": "Weekday End Time (HH:MM)",
+          "weekend_all_day": "Allow charging all day on weekends",
+          "timezone": "Timezone",
+          "disable_car_schedule": "Automatically disable rogue in-car charging schedule",
+          "poll_interval_minutes": "Polling interval (minutes)"
+        }
+      },
+      "vehicle": {
+        "title": "Select Vehicle",
+        "description": "Choose which Hyundai vehicle to manage.",
+        "data": {
+          "vehicle_id": "Vehicle"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to authenticate with Hyundai Bluelink. Check email, password, and region.",
+      "no_vehicles": "No vehicles found on this Bluelink account.",
+      "invalid_time": "Time must be in HH:MM format (e.g. 00:00 or 08:00).",
+      "invalid_timezone": "Invalid IANA timezone (e.g. Europe/Madrid)."
+    },
+    "abort": {
+      "already_configured": "This vehicle is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Charging Schedule Options",
+        "data": {
+          "weekday_start": "Weekday Start Time (HH:MM)",
+          "weekday_end": "Weekday End Time (HH:MM)",
+          "weekend_all_day": "Allow charging all day on weekends",
+          "timezone": "Timezone",
+          "disable_car_schedule": "Automatically disable rogue in-car charging schedule",
+          "poll_interval_minutes": "Polling interval (minutes)"
+        }
+      }
+    },
+    "error": {
+      "invalid_time": "Time must be in HH:MM format (e.g. 00:00 or 08:00).",
+      "invalid_timezone": "Invalid IANA timezone (e.g. Europe/Madrid)."
+    }
+  }
+}

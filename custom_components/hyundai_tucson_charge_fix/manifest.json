@@ -1,0 +1,14 @@
+{
+  "domain": "hyundai_tucson_charge_fix",
+  "name": "Hyundai Tucson Charge Fix",
+  "codeowners": ["@CaKiTarZ"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/CaKiTarZ/myhundai-hass",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/CaKiTarZ/myhundai-hass/issues",
+  "requirements": [
+    "hyundai_kia_connect_api>=4.0.0"
+  ],
+  "version": "1.0.0"
+}
